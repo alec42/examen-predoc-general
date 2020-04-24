@@ -5,7 +5,7 @@
 On s'intéresse au comportement de la v.a. $S = \sum_{i = 1}^{n}X_i$ représentant les coûts  d'un portefeuille de $n$ risques. On a 
 $$E[S] = E\left[\sum_{i = 1}^{n} X_i\right] = \sum_{i = 1}^{n}E[X_i]$$
 et
-$$Var(S) = Var\left(\sum_{i = 1}^{n}X_i\right) = \sum_{i = 1}^{n} Var(X_i) + \underset{i \neq 1}{\sum_{i = 1}^{n}\sum_{j = 1}^{n}}Cov(X_i, X_j).$$
+$$Var(S) = Var\left(\sum_{i = 1}^{n}X_i\right) = \sum_{i = 1}^{n} Var(X_i) + \underset{i \neq j}{\sum_{i = 1}^{n}\sum_{j = 1}^{n}}Cov(X_i, X_j).$$
 La fgm est donnée par 
 $$M_S(t) = E\left[e^{t\sum_{i = 1}^{n}X_i}\right] \stackrel{ind}{=} \prod_{i = 1}^{n} E\left[e^{tX_i}\right] = \prod_{i = 1}^{n}M_{X_i}(t).$$
 Si les v.a. $X_i$ sont iid, on a 

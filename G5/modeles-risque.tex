@@ -12,9 +12,9 @@
 	\end{equation}
 	
 	\begin{itemize}
-		\item La v.a. discrète $M$ représente le nombre de sinistres (fréquence)
-		\item La v.a. continue et positive $B_k$ correspond au montant du $k^{\text{ième}}$ sinistre (sévérité)
-		\item On dit que la v.a. est composée
+		\item La v.a. discrète $M$ représente le nombre de sinistres (fréquence) ;
+		\item La v.a. continue et positive $B_k$ correspond au montant du $k^{\text{ième}}$ sinistre (sévérité) ;
+		\item On dit que la v.a. est composée.
 	\end{itemize}
 \end{definition}
 
@@ -56,7 +56,7 @@ La fgp est
 $$E\left[t^{X}\right] = E_M\left[E\left[t^{X}\vert M\right]\right] = E_M\left[t^{B_1 + \dots + B_k}\right] = E_M\left[\prod_{i = 1}^{k}t^{B_i}\right] \stackrel{iid}{=} E_M\left[P_B(t)^M\right] = P_M(P_B(t)).$$
 
 La fgm est 
-$$E\left[e^{tX}\right] = E_M\left[E\left[e^{tX}\vert M\right]\right] = E_M\left[e^{t(B_1 + \dots + B_k)}\right] = E_M\left[\prod_{i = 1}^{k}e^{B_it}\right] \stackrel{iid}{=} E_M\left[M_B(t)^M\right] = P_M(M_B(t)).$$
+$$E\left[e^{tX}\right] = E_M\left[E\left[e^{tX}\vert M\right]\right] = E_M\left[e^{t(B_1 + \dots + B_k)}\right] = E_M\left[\prod_{i = 1}^{k}e^{tB_i}\right] \stackrel{iid}{=} E_M\left[M_B(t)^M\right] = P_M(M_B(t)).$$
 
 La transformée de Laplace est 
 
@@ -98,7 +98,7 @@ B, & M = 1\\
 	\end{itemize}
 \end{definition}
 
-L'approche indemnitaire est utile pour l'assurance vie. Soit $S = X_1 + X_2 + \dots + X_n$. Soit $q_j$, la probabilité de décès de l'individu $j$ et $b_j$, la prestation de décès. Alors, 
+L'approche indemnitaire est utile pour l'assurance vie. Soit $S = X_1 + X_2 + \dots + X_n$. Soit $q_j$, la probabilité de décès de l'individu $j$ et $b_j$, la prestation de décès. Alors, 
 \begin{itemize}
 	\item $\displaystyle E[S] = \sum_{j = 1}^{n}b_j q_j$
 	\item $\displaystyle Var(S) = \sum_{j = 1}^{n}b_j^2 q_j(1-q_j)$
